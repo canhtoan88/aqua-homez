@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Gotham Bold';
+    font-weight: bold;
+    src: local('Gotham'), url(../fonts/SVN-Gotham\ Bold.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Gotham Medium';
+    font-weight: normal;
+    src: local('Gotham'), url(../fonts/SVN-Gotham\ Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Gotham';
+    font-weight: normal;
+    src: local('Gotham'), url(../fonts/SVN-Gotham\ Light.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Gotham Italic';
+    font-weight: normal;
+    font-style: italic;
+    src: local('Gotham'), url(../fonts/SVN-Gotham\ Italic.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Gotham Bold Italic';
+    font-weight: bold;
+    font-style: italic;
+    src: local('Gotham'), url(../fonts/SVN-Gotham\ Bold\ Italic.otf) format('opentype');
+}

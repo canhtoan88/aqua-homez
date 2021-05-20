@@ -1,0 +1,60 @@
+.AH_Nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #0292B7;
+    align-items: center;
+    justify-content: space-between;
+    .AH_Nav_Container {
+        display: flex;
+        position: relative;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 95px;
+        .AH_Nav_Logo {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+            color: #0292B7;
+            background-color: #FFF;
+            &.active {
+                color: #FFF;
+                background-color: transparent;
+            }
+        }
+        .AH_Nav_Menu {
+            display: flex;
+            position: relative;
+            align-items: center;
+            height: auto;
+            padding-bottom: 4px;
+            height: 50px;
+            .AH_Nav_Menu--item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #FFF;
+                /* background: -webkit-linear-gradient(#009BF8, #FFF);
+                background-clip: text;
+                -webkit-text-fill-color: transparent; */
+                min-height: 40px;
+                padding: 0 8px;
+                background-color: transparent;
+                text-decoration: none;
+                cursor: pointer;
+                font-size: 16px;
+                font-family: "Gotham";
+                &:hover {
+                    text-decoration: underline;
+                }
+                &.active {
+                    font-family: "Gotham Medium";
+                }
+            }
+        }
+    }
+}

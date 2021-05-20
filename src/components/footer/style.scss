@@ -1,0 +1,85 @@
+.AH_Footer {
+    display: block;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    .AH_Footer_Profile {
+        /* padding: 48px 48px; */
+        display: flex;
+        width: 100%;
+        background: linear-gradient(to bottom, #F2FAFF, #E6F5FE);
+        .AH_Footer_Profile--logo {
+            display: flex;
+            position: relative;
+            width: 33%;
+            img {
+                display: block;
+                margin: auto;
+                width: 50%;
+            }
+        }
+        .AH_Footer_Profile--information {
+            display: flex;
+            position: relative;
+            width: 67%;
+            margin: 50px 0;
+            justify-content: space-evenly;
+        }
+        .AH_Footer_Profile--contact,
+        .AH_Footer_Profile--link,
+        .AH_Footer_Profile--area {
+            display: block;
+            position: relative;
+            margin-left: 24px;
+        }
+        .AH_Footer_Profile--title {
+            display: block;
+            font-family: "Gotham Bold";
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .AH_Footer_Profile--item {
+            display: flex;
+            align-items: center;
+            padding: 4px 0;
+            &.item-area {
+                cursor: pointer;
+                color: black;
+                text-decoration: none;
+                &:hover > svg {
+                    transition: transform 0.1s linear;
+                    transform: translateY(-4px);
+                }
+            }
+        }
+        .AH_Footer_Profile--value {
+            margin-left: 8px;
+            font-family: "Gotham";
+        }
+        a.AH_Footer_Profile--value {
+            margin-left: 0;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: #80CDFC;
+            }
+        }
+    }
+    .AH_Footer_Copyright {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 48px;
+        color: white;
+        background-color: #0292B7;
+        .AH_Footer_Copyright--social {
+            display: inline-flex;
+            align-items: center;
+            & > a {
+                display: inline-flex;
+                margin-left: 8px;
+            }
+        }
+    }
+}

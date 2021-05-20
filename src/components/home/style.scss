@@ -1,0 +1,389 @@
+.AH_Body {
+    display: block;
+    margin: 24px 48px;
+    .AH_Body_Main {
+        display: flex;
+        justify-content: space-around;
+        .AH_Body_Content {
+            display: block;
+            width: 40%;
+            margin: 12px 0;
+            padding: 16px;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            transition: box-shadow 0.15s linear;
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            & > img {
+                display: block;
+                margin: auto;
+                width: 70%;
+            }
+            .AH_Body_Content--area,
+            .AH_Body_Content--orientate {
+                display: flex;
+                justify-content: space-between;
+                & > img {
+                    display: block;
+                    width: 45%;
+                    object-fit: contain;
+                }
+            }
+            .AH_Body_Content--description {
+                display: block;
+                margin-left: 8px;
+            }
+            .AH_Body_Content--orientate {
+                .AH_Body_Content--description {
+                    margin-left: 0;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .AH_Body_Post {
+        display: flex;
+        position: relative;
+        margin-top: 24px;
+        .AH_Body_Recruitment {
+            display: block;
+            position: relative;
+            width: 50%;
+        }
+        .AH_Body_Article {
+            display: block;
+            position: relative;
+            width: 50%;
+        }
+        .AH_Body_Recruitment-box,
+        .AH_Body_Article-box {
+            display: block;
+            margin: 8px 16px;
+            padding: 12px;
+            border-left: 1px solid #009BF8;
+            a:hover {
+                color: #009BF8;
+            }
+            .AH_Body_Article-main {
+                display: flex;
+                position: relative;
+                align-items: center;
+                svg {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .AH_Body_Review {
+        display: flex;
+        justify-content: center;
+        margin: 16px 0;
+        .AH_Body_Review-content {
+            display: block;
+            position: relative;
+            text-align: center;
+        }
+    }
+    .AH_Body_Receive_Notify {
+        display: flex;
+        margin: 32px 8px;
+        justify-content: center;
+        align-items: center;
+        input {
+            font-family: 'Gotham Medium';
+            font-size: 16px;
+            min-width: 250px;
+            padding: 8px;
+            margin: 1px 16px;
+            outline: none;
+            text-align: center;
+            border: 1px solid #009BF8;
+            border-radius: 8px;
+            &:focus {
+                margin: 0 15px;
+                border-width: 2px;
+            }
+            &::placeholder {
+                font-family: Gotham;
+                font-size: 16px;
+            }
+            &.error {
+                border-color: #FF2D55;
+            }
+        }
+        button {
+            .CT-UI-Button-Content {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
+}
+
+.AH_Home {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    .AH_Overall {
+        display: flex;
+        position: relative;
+        .AH_Overall_Logo {
+            display: block;
+            width: 120px;
+            img {
+                display: block;
+                margin: 20px auto 0;
+                width: 100px;
+            }
+        }
+        .AH_Overall_Img {
+            display: block;
+            width: calc(100% - 120px);
+            img {
+                width: 100%;
+            }
+        }
+        .AH_Overall_Info {
+            display: block;
+            position: absolute;
+            bottom: 200px;
+            background-color: #0292b7;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            span {
+                display: block;
+                margin: 5px 0;
+                &.AH_Overall_Info_Website {
+                    font-size: 60px;
+                    font-family: 'Gotham Medium';
+                }
+                &.AH_Overall_Info_Slogan {
+                    font-size: 30px;
+                    font-family: 'Gotham';
+                }
+                &.AH_Overall_Info_Description {
+                    font-size: 20px;
+                    font-family: 'Gotham';
+                    font-style: italic;
+                    margin: 8px;
+                }
+            }
+        }
+    }
+    .AH_Introduce {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 20px;
+        .AH_Introduce_Top {
+            display: block;
+            height: 60%;
+            .AH_Introduce_Top_Content {
+                display: flex;
+                position: relative;
+                width: calc(50% - 186px);
+                height: 50%;
+                top: 50%;
+                .AH_Introduce_Top_Content_Svg {
+                    display: block;
+                    svg {
+                        display: block;
+                        margin: 0 32px;
+                        width: 48px;
+                        fill: #0292b7;
+                    }
+                }
+                .AH_Introduce_Top_Content_Text {
+                    font-size: 42px;
+                    font-family: "Gotham Medium";
+                }
+            }
+        }
+        .AH_Introduce_Img {
+            display: flex;
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(calc(100% - 85px));
+            z-index: 1;
+        }
+        .AH_Introduce_Bottom {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 40%;
+            background-color: #0292b7;
+            .AH_Introduce_Bottom_Description {
+                display: flex;
+                align-items: center;
+                width: calc(50% - 190px);
+                height: 100%;
+                margin: 10px 30px;
+                text-align: justify;
+                font-family: "Gotham";
+                font-size: 20px;
+                color: #FFF;
+                box-sizing: border-box;
+            }
+        }
+    }
+    .AH_Procedure {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+        & > img {
+            display: block;
+            width: 100%;
+        }
+        .AH_Procedure_Order {
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: space-evenly;
+            width: calc(100% - 60px);
+            margin: 0 30px;
+            padding: 32px 0;
+            color: #FFF;
+            background-color: #0292b7;
+            bottom: 0;
+            .AH_Procedure_Order_Main {
+                font-size: 20px;
+                font-family: "Gotham Medium";
+                max-width: 140px;
+                text-align: center;
+            }
+            .AH_Procedure_Order_Secondary {
+                font-size: 28px;
+                font-family: "Gotham";
+            }
+            svg {
+                display: block;
+                margin: 0 32px;
+                width: 48px;
+                fill: #FFF;
+            }
+        }
+    }
+    .AH_Contact {
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+        .AH_Contact_Img {
+            display: block;
+            width: 44.5%;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        .AH_Contact_Info {
+            display: flex;
+            flex-direction: column;
+            width: 55.5%;
+            justify-content: center;
+            align-items: center;
+            background-color: #0292b7;
+            .AH_Contact_Info_Title {
+                display: flex;
+                align-items: center;
+                margin-bottom: 80px;
+                svg {
+                    display: block;
+                    margin-right: 32px;
+                    width: 48px;
+                    fill: #FFF;
+                }
+                .AH_Contact_Info_Title_Text {
+                    font-size: 28px;
+                    font-family: "Gotham Medium";
+                    color: #FFF;
+                }
+            }
+            .AH_Contact_Info_Details {
+                display: flex;
+                position: relative;
+                color: #FFF;
+                & > div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    min-height: 130px;
+                    &.AH_Contact_Info_Address,
+                    &.AH_Contact_Info_Phone {
+                        max-width: 170px;
+                    }
+                    &.AH_Contact_Info_Email {
+                        margin: 0 50px;
+                    }
+                    .AH_Contact_Info_Type {
+                        display: block;
+                        text-align: center;
+                        font-size: 20px;
+                        font-family: "Gotham Medium";
+                        width: 80px;
+                    }
+                    .AH_Contact_Info_Value {
+                        font-size: 14px;
+                        font-family: "Gotham";
+                        text-align: center;
+                    }
+                }
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 55%;
+                    height: 1px;
+                    background-color: #FFF;
+                }
+            }
+        }
+    }
+    .AH_Receive_Notify {
+        display: flex;
+        margin: 32px 8px;
+        justify-content: center;
+        align-items: center;
+        input {
+            font-family: 'Gotham Medium';
+            font-size: 16px;
+            min-width: 250px;
+            padding: 8px;
+            margin: 1px 16px;
+            outline: none;
+            text-align: center;
+            border: 1px solid #009BF8;
+            border-radius: 8px;
+            &:focus {
+                margin: 0 15px;
+                border-width: 2px;
+            }
+            &::placeholder {
+                font-family: Gotham;
+                font-size: 16px;
+            }
+            &.error {
+                border-color: #FF2D55;
+            }
+        }
+        button {
+            .CT-UI-Button-Content {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
+}
