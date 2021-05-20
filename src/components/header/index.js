@@ -14,11 +14,11 @@ const Menu = () => {
                     {/* <img src={logo} alt="Aqua Home" /> */}
                 </NavLink>
                 <div className={'AH_Nav_Menu'}>
-                    <NavLink to={'/trang-chu'} className={'AH_Nav_Menu--item'}>Giới thiệu</NavLink>
+                    <NavLink to={'/'} className={'AH_Nav_Menu--item'}>Giới thiệu</NavLink>
                     <Divider direction={'vertical'} color={'white'} height={'75%'} />
-                    <NavLink to={'/tuyen-dung'} className={'AH_Nav_Menu--item'}>Tuyển dụng</NavLink>
+                    <NavLink to={'/'} className={'AH_Nav_Menu--item'}>Tuyển dụng</NavLink>
                     <Divider direction={'vertical'} color={'white'} height={'75%'} />
-                    <NavLink to={'/lien-he'} className={'AH_Nav_Menu--item'}>Liên hệ</NavLink>
+                    <NavLink to={'/'} className={'AH_Nav_Menu--item'}>Liên hệ</NavLink>
                 </div>
             </div>
         </div>
