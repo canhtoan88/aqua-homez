@@ -101,7 +101,7 @@ const Home = (props) => {
                                 Địa chỉ Email
                             </div>
                             <div className={'AH_Contact_Info_Value'}>
-                                help@aquahomez.com
+                                tuyendung.aquahomez@gmail.com
                             </div>
                         </div>
                         <div className={'AH_Contact_Info_Phone'}>

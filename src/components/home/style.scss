@@ -469,6 +469,19 @@
     }
 }
 
+@media only screen and  (max-width: 872px) {
+    .AH_Contact_Info_Details {
+        & > div {
+            min-height: 120px !important;
+            &.AH_Contact_Info_Email {
+                margin: 0 22px !important;
+            }
+        }
+        .AH_Contact_Info_Value {
+            font-size: 13px !important;
+        }
+    }
+}
 @media only screen and  (max-width: 768px) {
     .AH_Overall {
         .AH_Overall_Info {
@@ -574,6 +587,9 @@
             }
         }
     }
+    .AH_Contact .AH_Contact_Info .AH_Contact_Info_Details > div.AH_Contact_Info_Email {
+        margin: 0 26px !important;
+    }
 }
 
 @media only screen and (max-width: 569px) {
@@ -618,5 +634,146 @@
                 }
             }
         }
+    }
+    .AH_Contact .AH_Contact_Info .AH_Contact_Info_Details > div.AH_Contact_Info_Email {
+        margin: 0 14px !important;
+    }
+}
+
+@media only screen and (max-width: 546px) {
+    .AH_Overall {
+        .AH_Overall_Logo {
+            width: 70px !important;
+            img {
+                margin-top: 10px !important;
+                width: 55px !important;
+            }
+        }
+        .AH_Overall_Img {
+            width: calc(100% - 70px) !important;
+        }
+        .AH_Overall_Info {
+            padding: 2px 4px !important;
+            top: 35% !important;
+            span {
+                margin: 3px 0 !important;
+                &.AH_Overall_Info_Website {
+                    font-size: 20px !important;
+                }
+                &.AH_Overall_Info_Slogan {
+                    font-size: 16px !important;
+                }
+                &.AH_Overall_Info_Description {
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+    .AH_Introduce .AH_Introduce_Bottom .AH_Introduce_Bottom_Description {
+        font-size: 16px !important;
+        padding: 10px 20px !important;
+    }
+    .AH_Procedure {
+        .AH_Procedure_Order {
+            .AH_Procedure_Order_Main {
+                font-size: 16px !important;
+            }
+            .AH_Procedure_Order_Secondary {
+                font-size: 16px !important;
+            }
+            svg {
+                margin: 0 12px !important;
+                width: 32px !important;
+            }
+        }
+    }
+    .AH_Contact {
+        .AH_Contact_Img {
+            max-height: 320px !important;
+            img {
+                max-height: 320px !important;
+            }
+        }
+        .AH_Contact_Info {
+            .AH_Contact_Info_Title {
+                margin-bottom: 16px !important;
+                svg {
+                    margin-right: 16px !important;
+                    width: 32px !important;
+                }
+            }
+            .AH_Contact_Info_Details {
+                display: block !important;
+                &::after {
+                    display: none !important;
+                }
+                .AH_Contact_Info_Address,
+                .AH_Contact_Info_Email,
+                .AH_Contact_Info_Phone {
+                    max-width: max-content !important;
+                    min-height: 50px !important;
+                    margin: auto !important;
+                }
+                .AH_Contact_Info_Email {
+                    margin: 16px auto !important;
+                }
+                .AH_Contact_Info_Type {
+                    width: max-content !important;
+                    font-size: 16px !important;
+                }
+                .AH_Contact_Info_Value {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .AH_Overall {
+        .AH_Overall_Info {
+            padding: 2px 4px !important;
+            top: 70px !important;
+            span {
+                margin: 1px 0 !important;
+                &.AH_Overall_Info_Website {
+                    font-size: 18px !important;
+                }
+                &.AH_Overall_Info_Slogan {
+                    font-size: 14px !important;
+                }
+                &.AH_Overall_Info_Description {
+                    font-size: 12px !important;
+                }
+            }
+            hr {
+                margin: 5px 0;
+            }
+        }
+    }
+    .AH_Introduce {
+        .AH_Introduce_Top .AH_Introduce_Top_Content .AH_Introduce_Top_Content_Text {
+            font-size: 28px !important;
+        }
+        .AH_Introduce_Bottom .AH_Introduce_Bottom_Description {
+            font-size: 14px !important;
+        }
+    }
+    .AH_Procedure {
+        .AH_Procedure_Order {
+            .AH_Procedure_Order_Main {
+                font-size: 14px !important;
+            }
+            .AH_Procedure_Order_Secondary {
+                font-size: 14px !important;
+            }
+            svg {
+                margin: 0 10px !important;
+                width: 28px !important;
+            }
+        }
+    }
+    .AH_Contact .AH_Contact_Info .AH_Contact_Info_Title .AH_Contact_Info_Title_Text {
+        font-size: 24px !important;
     }
 }
