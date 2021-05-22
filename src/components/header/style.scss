@@ -26,6 +26,10 @@
                 background-color: transparent;
             }
         }
+        .AH_Nav_Menu_More {
+            display: none;
+            user-select: none;
+        }
         .AH_Nav_Menu {
             display: flex;
             position: relative;
@@ -53,6 +57,47 @@
                 }
                 &.active {
                     font-family: "Gotham Medium";
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 678px) {
+    .AH_Nav_Container {
+        margin: 0 75px !important;
+    }
+}
+
+@media only screen and (max-width: 569px) {
+    .AH_Nav {
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 100;
+        .AH_Nav_Container {
+            margin: 0 15px !important;
+            .AH_Nav_Menu_More {
+                display: block !important;
+                cursor: pointer;
+                color: #FFF !important;
+                &.active + .AH_Nav_Menu {
+                    height: 124px !important;
+                }
+            }
+            .AH_Nav_Menu {
+                display: block !important;
+                position: absolute !important;
+                left: 0 !important;
+                right: 0 !important;
+                top: 100% !important;
+                height: 0 !important;
+                margin: 0 -15px !important;
+                background-color: #0292B7;
+                transition: height 0.15s linear;
+                overflow-y: hidden;
+                z-index: 1;
+                .CT-UI-Divider-Vertical {
+                    display: none;
                 }
             }
         }

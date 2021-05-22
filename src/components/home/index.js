@@ -109,7 +109,7 @@ const Home = (props) => {
                                 Số điện thoại
                             </div>
                             <div className={'AH_Contact_Info_Value'}>
-                                079 646 1988
+                                0906 908 004
                             </div>
                         </div>
                     </div>

@@ -12,6 +12,9 @@
             display: flex;
             position: relative;
             width: 33%;
+            .AH_Footer_Profile--logo-noname {
+                display: none;
+            }
             img {
                 display: block;
                 margin: auto;
@@ -79,6 +82,99 @@
             & > a {
                 display: inline-flex;
                 margin-left: 8px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1111px) {
+    .AH_Footer_Profile--logo {
+        width: 25% !important;
+        img {
+            width: 65% !important;
+        }
+    }
+    .AH_Footer_Profile--information {
+        width: 75% !important;
+    }
+}
+
+@media only screen and (max-width: 937px) {
+    .AH_Footer_Profile {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 833px) {
+    .AH_Footer_Profile {
+        display: block !important;
+        .AH_Footer_Profile--contact,
+        .AH_Footer_Profile--link,
+        .AH_Footer_Profile--area {
+            margin-left: 0 !important;
+            margin-bottom: 20px !important;
+        }
+        .AH_Footer_Profile--logo {
+            width: 100% !important;
+            & > img {
+                display: none !important;
+            }
+            .AH_Footer_Profile--logo-noname {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                img {
+                    display: block !important;
+                    width: 20% !important;
+                    margin: 0 !important;
+                }
+                .AH_Footer_Profile--name {
+                    font-size: 32px !important;
+                    font-family: "Gotham Bold";
+                    color: #53aadf;
+                }
+            }
+        }
+        .AH_Footer_Profile--information {
+            width: 100% !important;
+            margin: 0 !important;
+        }
+    }
+    .AH_Footer_Copyright {
+        display: block !important;
+        margin: auto;
+        .AH_Footer_Copyright--text {
+            display: block !important;
+            width: 100% !important;
+            text-align: center !important;
+        }
+        .AH_Footer_Copyright--social {
+            display: block !important;
+            text-align: center !important;
+            .CT-UI-Typography {
+                display: block !important;
+                margin: 8px 0px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .AH_Footer_Profile {
+        .AH_Footer_Profile--information {
+            display: block !important;
+            .AH_Footer_Profile--contact,
+            .AH_Footer_Profile--link,
+            .AH_Footer_Profile--area {
+                display: block !important;
+                text-align: center !important;
+                margin-bottom: 0 !important;
+                padding-bottom: 16px !important;
+                .AH_Footer_Profile--item {
+                    display: flex !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                }
             }
         }
     }

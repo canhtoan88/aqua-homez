@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {Phone, Mail, Location, Facebook, Public} from 'cant-ui/icons';
 import logo from '../../assets/images/logo-name.png';
+import logoOnly from '../../assets/images/logo.png';
 import './style.scss';
 import { Typography } from 'cant-ui/core';
 
@@ -11,6 +12,10 @@ const Footer = () => {
             <div className={'AH_Footer_Profile'}>
                 <div className={'AH_Footer_Profile--logo'}>
                     <img src={logo} alt="AQUA HOME" />
+                    <div className={'AH_Footer_Profile--logo-noname'}>
+                        <img src={logoOnly} alt="AQUA HOME" />
+                        <span className={'AH_Footer_Profile--name'}>AQUA HOMEZ</span>
+                    </div>
                 </div>
                 <div className={'AH_Footer_Profile--information'}>
                     <div className={'AH_Footer_Profile--contact'}>
@@ -19,11 +24,11 @@ const Footer = () => {
                         </span>
                         <div className={'AH_Footer_Profile--item'}>
                             <Phone color={'#80CDFC'} />
-                            <span className={'AH_Footer_Profile--value'}>0987654321</span>
+                            <span className={'AH_Footer_Profile--value'}>0906908004</span>
                         </div>
                         <div className={'AH_Footer_Profile--item'}>
                             <Mail color={'#80CDFC'} />
-                            <span className={'AH_Footer_Profile--value'}>help@aquahomez.com</span>
+                            <span className={'AH_Footer_Profile--value'}>tuyendung.aquahomez@gmail.com</span>
                         </div>
                         <div className={'AH_Footer_Profile--item'}>
                             <Public color={'#80CDFC'} />
@@ -38,10 +43,10 @@ const Footer = () => {
                             <Link to={'/trang-chu'} className={'AH_Footer_Profile--value'}>Giới thiệu</Link>
                         </div>
                         <div className={'AH_Footer_Profile--item'}>
-                            <Link to={'/tuyen-dung'} className={'AH_Footer_Profile--value'}>Tuyển dụng</Link>
+                            <a href={'https://forms.gle/g6w6uXB63QTd3bot5'} rel="noreferrer" target={'_blank'} className={'AH_Footer_Profile--value'}>Tuyển dụng</a>
                         </div>
                         <div className={'AH_Footer_Profile--item'}>
-                            <Link to={'/lien-he'} className={'AH_Footer_Profile--value'}>Liên hệ</Link>
+                            <Link to={'/'} className={'AH_Footer_Profile--value'}>Liên hệ</Link>
                         </div>
                     </div>
                     <div className={'AH_Footer_Profile--area'}>
@@ -61,7 +66,7 @@ const Footer = () => {
                 </div>
                 <div className={'AH_Footer_Copyright--social'}>
                     <Typography text={'Liên hệ với chúng tôi qua'} color={'#FFF'} />
-                    <a href="https://www.facebook.com/housenguyentuan" target={'_blank'} rel="noreferrer">
+                    <a href="https://www.facebook.com/aquahomez.vn/?ref=pages_you_manage" target={'_blank'} rel="noreferrer">
                         <Facebook width={32} height={32} mainColor />
                     </a>
                 </div>
